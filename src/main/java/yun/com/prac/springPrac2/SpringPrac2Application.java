@@ -14,5 +14,13 @@ public class SpringPrac2Application {
 		PrinterService printerService = applicationContext.getBean(PrinterService.class);
 
 		printerService.printMessage();
+
+		ConstructorInjectionImpl constructorInjection = applicationContext.getBean(ConstructorInjectionImpl.class);
+
+		constructorInjection.printMessage();
+
+		SetterInjectionImpl setterInjection = applicationContext.getBean(SetterInjectionImpl.class);
+
+		setterInjection.printMessage();
 	}
 }

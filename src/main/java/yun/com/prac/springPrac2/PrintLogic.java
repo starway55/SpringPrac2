@@ -8,11 +8,9 @@ import org.springframework.stereotype.Component;
 @Component
 public class PrintLogic {
 
-    public PrintLogic(){};
+    public void printMessage(PrintType type){
 
-    public void print(){
-
-        System.out.println("Printing Message");
+        System.out.println(type.getMessage());
     }
 
 }
